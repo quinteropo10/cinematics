@@ -3,8 +3,8 @@ package com.bezkoder.spring.jpa.postgresql.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tutorials")
-public class Tutorial {
+@Table(name = "peliculas")
+public class Pelicula {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,11 +19,11 @@ public class Tutorial {
 	@Column(name = "published")
 	private boolean published;
 
-	public Tutorial() {
+	public Pelicula() {
 
 	}
 
-	public Tutorial(String title, String description, boolean published) {
+	public Pelicula(String title, String description, boolean published) {
 		this.title = title;
 		this.description = description;
 		this.published = published;
